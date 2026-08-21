@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PractiGO | AI SaaS Platform for Doctors</title>
+  <meta name="description" content="PractiGO is VadayAI's AI SaaS platform for doctors and clinics — ambient documentation, visit summaries, smart scheduling and secure data handling." />
+  <link rel="canonical" href="https://www.vadayai.com/practigo.html" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PractiGO | AI SaaS Platform for Doctors" />
+  <meta property="og:description" content="Ambient documentation, visit summaries, smart scheduling and secure data handling — built for doctors and clinics." />
+  <meta property="og:image" content="https://www.vadayai.com/assets/img/practigo-logo.jpeg" />
+  <meta property="og:url" content="https://www.vadayai.com/practigo.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PractiGO | AI SaaS Platform for Doctors" />
+  <meta name="twitter:description" content="Ambient documentation, visit summaries, smart scheduling and secure data handling — built for doctors and clinics." />
+  <meta name="twitter:image" content="https://www.vadayai.com/assets/img/practigo-logo.jpeg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PractiGO",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web",
+    "description": "AI SaaS platform for doctors and clinics providing ambient clinical documentation, visit summaries, smart scheduling and automated follow-ups.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Contact for pricing" },
+    "publisher": { "@type": "Organization", "name": "VadayAI Solutions" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.vadayai.com/" },
+      { "@type": "ListItem", "position": 2, "name": "PractiGO", "item": "https://www.vadayai.com/practigo.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is PractiGO a diagnostic tool?", "acceptedAnswer": { "@type": "Answer", "text": "No. PractiGO is a documentation and workflow assistant. It does not diagnose, treat or make clinical decisions — those remain with the treating physician." } },
+      { "@type": "Question", "name": "How does PractiGO handle patient data?", "acceptedAnswer": { "@type": "Answer", "text": "Data is encrypted in transit and at rest, access is role-based, and every action is logged. The architecture is built with healthcare privacy requirements in mind." } },
+      { "@type": "Question", "name": "Can PractiGO integrate with our existing EHR?", "acceptedAnswer": { "@type": "Answer", "text": "Integration depends on your EHR's available APIs. We assess compatibility during onboarding and support common interoperability standards where available." } },
+      { "@type": "Question", "name": "How long does onboarding take?", "acceptedAnswer": { "@type": "Answer", "text": "A solo practice can typically be live within one to two weeks. Multi-specialty clinics and hospital departments take longer depending on integration scope." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="swooshGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1D4ED8" />
+        <stop offset="100%" stop-color="#22D3EE" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="VadayAI Solutions — Home">
+        <img src="assets/img/vadayai-logo.jpeg" alt="VadayAI Solutions" width="206" height="44" />
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li class="has-mega">
+            <a class="nav-link" href="services.html" aria-haspopup="true" aria-expanded="false">
+              Solutions
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="mega-panel" role="menu" aria-label="Solutions">
+              <a class="mega-item" href="practigo.html" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></span>
+                <span><strong>PractiGO</strong><span>Our AI SaaS platform built for doctors and clinics</span></span>
+              </a>
+              <a class="mega-item" href="services.html#genai" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg></span>
+                <span><strong>Generative AI Solutions</strong><span>LLM apps, copilots and content engines</span></span>
+              </a>
+              <a class="mega-item" href="services.html#agentic" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="14" height="10" rx="2"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/><path d="M12 9V5M9 5h6"/></svg></span>
+                <span><strong>Agentic AI Systems</strong><span>Autonomous agents that execute multi-step work</span></span>
+              </a>
+              <a class="mega-item" href="services.html#automation" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></span>
+                <span><strong>AI Automation</strong><span>Workflow and back-office automation</span></span>
+              </a>
+              <a class="mega-item" href="services.html#cloud" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.4-10 6 6 0 0 1 11.4 2A4.5 4.5 0 0 1 17.5 18Z"/></svg></span>
+                <span><strong>Cloud Services</strong><span>Architecture, migration and DevOps</span></span>
+              </a>
+              <a class="mega-item" href="services.html#web" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 14l-2 2 2 2M13 14l2 2-2 2"/></svg></span>
+                <span><strong>Web Design &amp; Development</strong><span>Conversion-focused sites and portals</span></span>
+              </a>
+            </div>
+          </li>
+          <li class="has-mega">
+            <a class="nav-link" href="services.html" aria-haspopup="true" aria-expanded="false">
+              Services
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="mega-panel" role="menu" aria-label="Services">
+              <a class="mega-item" href="services.html#consulting" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-4 2 2-6z"/></svg></span>
+                <span><strong>AI Consulting &amp; Strategy</strong><span>Roadmaps and use-case prioritization</span></span>
+              </a>
+              <a class="mega-item" href="services.html#development" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4 3 12l5 8"/><path d="M16 4l5 8-5 8"/></svg></span>
+                <span><strong>Custom AI Development</strong><span>Models and applications built for you</span></span>
+              </a>
+              <a class="mega-item" href="services.html#data" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+                <span><strong>Data Engineering &amp; RAG</strong><span>Pipelines and retrieval-grounded AI</span></span>
+              </a>
+              <a class="mega-item" href="services.html#integration" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6"/><path d="M10 6H7a6 6 0 0 0 0 12h3"/><path d="M14 6h3a6 6 0 0 1 0 12h-3"/></svg></span>
+                <span><strong>AI Integration</strong><span>AI woven into the tools you already use</span></span>
+              </a>
+              <a class="mega-item" href="services.html#support" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.4 8.4-8 9-4.6-.6-8-4-8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                <span><strong>Managed AI Support</strong><span>Monitoring, tuning and updates post-launch</span></span>
+              </a>
+              <a class="mega-item" href="services.html#staffing" role="menuitem">
+                <span class="mega-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="3"/><path d="M15 12.5a5.5 5.5 0 0 1 6.5 5.4"/></svg></span>
+                <span><strong>Staff Augmentation</strong><span>Senior AI engineers embedded in your team</span></span>
+              </a>
+            </div>
+          </li>
+          <li><a class="nav-link" href="industries.html">Industries</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-primary" href="contact.html">Book a Free Consultation</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-head">
+      <img src="assets/img/vadayai-logo.jpeg" alt="VadayAI Solutions" height="32" />
+      <button class="mobile-nav-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="mobile-accordion">
+        <button class="mobile-accordion-trigger" aria-expanded="false">Solutions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mobile-accordion-panel">
+          <a href="practigo.html"><strong>PractiGO</strong><span>AI platform for doctors and clinics</span></a>
+          <a href="services.html#genai"><strong>Generative AI Solutions</strong><span>LLM apps and copilots</span></a>
+          <a href="services.html#agentic"><strong>Agentic AI Systems</strong><span>Autonomous multi-step agents</span></a>
+          <a href="services.html#automation"><strong>AI Automation</strong><span>Workflow automation</span></a>
+          <a href="services.html#cloud"><strong>Cloud Services</strong><span>Architecture and DevOps</span></a>
+          <a href="services.html#web"><strong>Web Design &amp; Development</strong><span>Conversion-focused sites</span></a>
+        </div>
+      </li>
+      <li class="mobile-accordion">
+        <button class="mobile-accordion-trigger" aria-expanded="false">Services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mobile-accordion-panel">
+          <a href="services.html#consulting"><strong>AI Consulting &amp; Strategy</strong></a>
+          <a href="services.html#development"><strong>Custom AI Development</strong></a>
+          <a href="services.html#data"><strong>Data Engineering &amp; RAG</strong></a>
+          <a href="services.html#integration"><strong>AI Integration</strong></a>
+          <a href="services.html#support"><strong>Managed AI Support</strong></a>
+          <a href="services.html#staffing"><strong>Staff Augmentation</strong></a>
+        </div>
+      </li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a class="btn btn-primary" href="contact.html">Book a Free Consultation</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- =============================== PRODUCT HERO ============================ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <span>PractiGO</span></p>
+        <div class="product-hero">
+          <div data-reveal>
+            <img src="assets/img/practigo-logo.jpeg" alt="PractiGO — AI-Powered Care, Better Decisions" width="284" height="82" style="margin-bottom:26px;max-width:280px;height:auto" />
+            <p class="eyebrow">Our Own Product</p>
+            <h1>The AI SaaS platform built <span class="grad-text">for doctors</span></h1>
+            <p class="lede">PractiGO listens, drafts and organizes clinical work so physicians spend their time with patients instead of paperwork — ambient documentation, visit summaries, scheduling intelligence and follow-up automation in one secure platform.</p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="contact.html">Book a Demo</a>
+              <a class="btn btn-secondary" href="#pricing">See Pricing</a>
+            </div>
+          </div>
+          <div data-reveal data-reveal-delay="150">
+            <div class="mock-device">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-line w-50 accent"></div>
+              <div class="mock-line w-90"></div>
+              <div class="mock-line w-70"></div>
+              <div class="mock-line w-50"></div>
+              <div class="mock-card-row">
+                <div class="mock-mini-card">
+                  <div class="mock-line w-70"></div>
+                  <div class="mock-line w-50"></div>
+                </div>
+                <div class="mock-mini-card">
+                  <div class="mock-line w-90"></div>
+                  <div class="mock-line w-70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ THE PROBLEM ============================= -->
+    <section>
+      <div class="container two-col">
+        <div data-reveal>
+          <p class="eyebrow">The Problem</p>
+          <h2>Doctors lose <span class="grad-text">hours a day</span> to documentation</h2>
+          <p>Charting, coding and after-visit summaries routinely eat into evenings and weekends. Studies across health systems consistently point to documentation burden as a leading driver of physician burnout — time that could go to patients instead goes to a keyboard.</p>
+          <p>PractiGO was built to close that gap: it captures the visit, structures the note, and surfaces what needs a human decision — so clinicians review and approve rather than transcribe from scratch.</p>
+        </div>
+        <div class="col-media" data-reveal data-reveal-delay="150" aria-hidden="true">
+          <svg viewBox="0 0 300 240" fill="none">
+            <rect x="30" y="20" width="240" height="200" rx="16" stroke="#1D4ED8" stroke-width="2" opacity="0.5"/>
+            <path d="M60 70h120M60 100h180M60 130h140M60 160h100" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+            <circle cx="250" cy="60" r="8" fill="#67E8F9"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><svg class="swoosh-divider" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 300 0, 500 80, 800 30 S 1100 10, 1200 40"/><circle cx="800" cy="30" r="5" fill="#67E8F9"/></svg></div>
+
+    <!-- ================================ HOW IT WORKS ============================= -->
+    <section class="bg-alt">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">How It Works</p>
+          <h2>From visit to record in <span class="grad-text">four steps</span></h2>
+        </div>
+        <div class="steps-grid" data-reveal>
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h4>Capture</h4>
+            <p>PractiGO listens to the visit (with consent) or accepts dictated notes.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h4>Draft</h4>
+            <p>It structures a draft note, summary and coding suggestions for review.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h4>Review</h4>
+            <p>The clinician edits and approves — nothing is finalized without sign-off.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <h4>Follow up</h4>
+            <p>Automated reminders, summaries and scheduling keep the patient on track.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================= FEATURE GRID ============================= -->
+    <section>
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">Platform Features</p>
+          <h2>Everything a modern practice <span class="grad-text">needs</span></h2>
+        </div>
+        <div class="feature-grid">
+          <div class="service-card" data-reveal>
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v6M12 17v6M4 12H1M23 12h-3"/><circle cx="12" cy="12" r="6"/></svg></div>
+            <h3>Ambient documentation</h3>
+            <p>Structured notes drafted automatically from the visit, ready for clinician review.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="80">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"/><path d="M9 13h6M9 17h4"/></svg></div>
+            <h3>AI visit summaries</h3>
+            <p>Plain-language after-visit summaries generated for both chart and patient.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="160">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 3v3M16 3v3"/></svg></div>
+            <h3>Smart scheduling</h3>
+            <p>No-show prediction and intelligent slot management to protect provider time.</p>
+          </div>
+          <div class="service-card" data-reveal>
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg></div>
+            <h3>Automated follow-ups</h3>
+            <p>Reminders, care instructions and check-ins sent on a schedule you define.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="80">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
+            <h3>Practice analytics</h3>
+            <p>A live dashboard of visit volume, documentation time saved and follow-up rates.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="160">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.4 8.4-8 9-4.6-.6-8-4-8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Secure data handling</h3>
+            <p>Role-based access and permissioning built around who should see what.</p>
+          </div>
+          <div class="service-card" data-reveal>
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+            <h3>Structured chart data</h3>
+            <p>Notes are captured in structured form, ready to export or integrate downstream.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="80">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6"/><path d="M10 6H7a6 6 0 0 0 0 12h3"/><path d="M14 6h3a6 6 0 0 1 0 12h-3"/></svg></div>
+            <h3>EHR-friendly exports</h3>
+            <p>Structured note exports designed to slot into your existing charting workflow.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="160">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="3"/><path d="M15 12.5a5.5 5.5 0 0 1 6.5 5.4"/></svg></div>
+            <h3>Multi-provider support</h3>
+            <p>Role-aware views for physicians, front-desk staff and practice administrators.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><svg class="swoosh-divider" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 250 10, 550 90, 850 40 S 1050 0, 1200 30"/><circle cx="850" cy="40" r="5" fill="#67E8F9"/></svg></div>
+
+    <!-- ============================== BENEFITS BY AUDIENCE ========================= -->
+    <section class="bg-alt">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">Built For Your Setting</p>
+          <h2>Benefits by <span class="grad-text">practice type</span></h2>
+        </div>
+        <div class="audience-grid" data-reveal>
+          <div class="audience-card">
+            <h4>Solo Practitioners</h4>
+            <p>Cut charting time without hiring a scribe. Set up and start seeing time savings within the first week, with a workflow that fits a one-provider schedule.</p>
+          </div>
+          <div class="audience-card">
+            <h4>Multi-Specialty Clinics</h4>
+            <p>Standardize documentation quality across providers while giving each specialty its own note templates and follow-up cadences.</p>
+          </div>
+          <div class="audience-card">
+            <h4>Hospital Departments</h4>
+            <p>Role-based access and audit logging designed to fit department-level governance, with analytics rolled up for administrators.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SECURITY & COMPLIANCE ========================= -->
+    <section>
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">Security &amp; Compliance</p>
+          <h2>Built with a <span class="grad-text">privacy-first</span> architecture</h2>
+        </div>
+        <div class="security-grid" data-reveal>
+          <div class="security-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            <div><h4>Encryption in transit &amp; at rest</h4><p>Data is encrypted end to end, both moving between systems and while stored.</p></div>
+          </div>
+          <div class="security-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19a6.5 6.5 0 0 1 13 0"/><path d="M17 8h4M19 6v4"/></svg>
+            <div><h4>Role-based access</h4><p>Every user sees only what their role requires — configurable per clinic.</p></div>
+          </div>
+          <div class="security-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3-4 3 3 4-6"/></svg>
+            <div><h4>Audit logging</h4><p>Every access and change is logged for accountability and review.</p></div>
+          </div>
+          <div class="security-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/></svg>
+            <div><h4>Data residency options</h4><p>Hosting region can be configured to meet your organization's requirements.</p></div>
+          </div>
+        </div>
+        <div class="compliance-note" data-reveal>
+          <strong>Important:</strong> PractiGO is a documentation and workflow assistant, not a diagnostic or treatment device. It is built with healthcare privacy requirements in mind, using a HIPAA-conscious architecture — we do not claim a certification or independent audit the company has not completed. Clinical decisions always remain with the treating physician.
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><svg class="swoosh-divider" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 C 300 70, 500 0, 800 50 S 1050 70, 1200 20"/><circle cx="500" cy="20" r="5" fill="#67E8F9"/></svg></div>
+
+    <!-- ==================================== PRICING ================================== -->
+    <section class="bg-alt" id="pricing">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple plans that <span class="grad-text">scale with you</span></h2>
+        </div>
+        <!-- SET REAL PRICING -->
+        <div class="pricing-grid" data-reveal>
+          <div class="price-card">
+            <h3>Starter</h3>
+            <p>For solo practitioners getting started with AI documentation.</p>
+            <div class="price-amount">Contact for pricing</div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1 provider seat</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ambient documentation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Visit summaries</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Email support</li>
+            </ul>
+            <a class="btn btn-secondary btn-block" href="contact.html">Contact for Pricing</a>
+          </div>
+          <div class="price-card featured">
+            <h3>Professional</h3>
+            <p>For growing clinics with multiple providers and specialties.</p>
+            <div class="price-amount">Contact for pricing</div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Up to 10 provider seats</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Smart scheduling</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Automated follow-ups</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Practice analytics dashboard</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Priority support</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="contact.html">Contact for Pricing</a>
+          </div>
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <p>For hospital departments and multi-site health systems.</p>
+            <div class="price-amount">Contact for pricing</div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Unlimited provider seats</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Custom EHR integration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Dedicated data residency</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>SLA-backed support</li>
+            </ul>
+            <a class="btn btn-secondary btn-block" href="contact.html">Contact for Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ INTEGRATIONS ================================= -->
+    <section>
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">Integrations</p>
+          <h2>Fits the tools you <span class="grad-text">already use</span></h2>
+        </div>
+        <div class="integrations-strip" data-reveal>
+          <span class="tech-pill">HL7 / FHIR-ready exports</span>
+          <span class="tech-pill">Calendar &amp; scheduling systems</span>
+          <span class="tech-pill">SMS &amp; email reminders</span>
+          <span class="tech-pill">Secure document export</span>
+          <span class="tech-pill">Single sign-on (SSO)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== FAQ ====================================== -->
+    <section class="bg-alt">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">PractiGO Questions</p>
+          <h2>Product <span class="grad-text">FAQ</span></h2>
+        </div>
+        <div class="faq-list" data-reveal>
+          <div class="faq-item">
+            <h3><button class="faq-question" aria-expanded="false" aria-controls="mv-a1" id="mv-q1"><span>Is PractiGO a diagnostic tool?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+            <div class="faq-answer" id="mv-a1" role="region" aria-labelledby="mv-q1"><p class="faq-answer-inner">No. PractiGO is a documentation and workflow assistant. It does not diagnose, treat or make clinical decisions — those remain with the treating physician at all times.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" aria-expanded="false" aria-controls="mv-a2" id="mv-q2"><span>How does PractiGO handle patient data?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+            <div class="faq-answer" id="mv-a2" role="region" aria-labelledby="mv-q2"><p class="faq-answer-inner">Data is encrypted in transit and at rest, access is role-based, and every action is logged. The architecture is built with healthcare privacy requirements in mind, using a HIPAA-conscious design.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" aria-expanded="false" aria-controls="mv-a3" id="mv-q3"><span>Can PractiGO integrate with our existing EHR?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+            <div class="faq-answer" id="mv-a3" role="region" aria-labelledby="mv-q3"><p class="faq-answer-inner">Integration depends on your EHR's available APIs. We assess compatibility during onboarding and support common interoperability standards where the EHR vendor makes them available.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-question" aria-expanded="false" aria-controls="mv-a4" id="mv-q4"><span>How long does onboarding take?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+            <div class="faq-answer" id="mv-a4" role="region" aria-labelledby="mv-q4"><p class="faq-answer-inner">A solo practice can typically be live within one to two weeks. Multi-specialty clinics and hospital departments take longer depending on integration scope.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================= BOOK A DEMO CTA ============================== -->
+    <section>
+      <div class="container text-center" data-reveal>
+        <p class="eyebrow" style="justify-content:center">Ready When You Are</p>
+        <h2>See PractiGO on a <span class="grad-text">real clinic workflow</span></h2>
+        <p style="max-width:560px;margin:16px auto 30px">Book a live walkthrough and we'll show it against a workflow like yours — no generic slide deck.</p>
+        <a class="btn btn-primary" href="contact.html">Book a Demo</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="assets/img/vadayai-logo.jpeg" alt="VadayAI Solutions" width="178" height="38" />
+          <p>We design, build and run AI systems that do real work — from our own clinical SaaS platform to generative AI, agentic automation and cloud engineering.</p>
+          <div class="social-row">
+            <!-- FILL IN REAL SOCIAL URLS -->
+            <a href="#" aria-label="VadayAI on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 0 1 4 0V17M12 12.5V17"/></svg></a>
+            <a href="#" aria-label="VadayAI on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+            <a href="#" aria-label="VadayAI on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="VadayAI on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-1.5c0-.6.4-1.5 1-1.5Z"/></svg></a>
+            <a href="#" aria-label="VadayAI on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="m10 9.5 5 2.5-5 2.5Z"/></svg></a>
+          </div>
+          <form class="newsletter" aria-label="Newsletter signup" onsubmit="return false;">
+            <label class="visually-hidden" for="newsletter-email">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="Your work email" required />
+            <button type="submit" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </form>
+        </div>
+        <div class="footer-col">
+          <h4>Solutions<span class="footer-accordion-toggle" aria-hidden="true"></span></h4>
+          <ul>
+            <li><a href="practigo.html">PractiGO</a></li>
+            <li><a href="services.html#genai">Generative AI</a></li>
+            <li><a href="services.html#agentic">Agentic AI</a></li>
+            <li><a href="services.html#automation">AI Automation</a></li>
+            <li><a href="services.html#cloud">Cloud Services</a></li>
+            <li><a href="services.html#web">Web Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services<span class="footer-accordion-toggle" aria-hidden="true"></span></h4>
+          <ul>
+            <li><a href="services.html#consulting">AI Consulting</a></li>
+            <li><a href="services.html#development">Custom AI Development</a></li>
+            <li><a href="services.html#data">Data Engineering</a></li>
+            <li><a href="services.html#integration">AI Integration</a></li>
+            <li><a href="services.html#support">Managed Support</a></li>
+            <li><a href="services.html#staffing">Staff Augmentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company<span class="footer-accordion-toggle" aria-hidden="true"></span></h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch<span class="footer-accordion-toggle" aria-hidden="true"></span></h4>
+          <div class="footer-office">
+            <!-- FILL IN REAL DETAILS -->
+            <p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>India — Corporate Office: <!-- FILL IN REAL DETAILS -->[ADD OFFICE ADDRESS], Uttar Pradesh, India</span>
+            </p>
+            <p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span><a href="mailto:info@vadayai.com">info@vadayai.com</a><br /><a href="mailto:sales@vadayai.com">sales@vadayai.com</a></span>
+            </p>
+            <p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+              <!-- FILL IN REAL DETAILS -->
+              <span><a href="tel:+910000000000">[ADD PHONE NUMBER]</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 VadayAI Solutions. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
