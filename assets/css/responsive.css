@@ -18,6 +18,12 @@
 
   .main-nav { display: none; }
   .nav-toggle { display: flex; }
+  /* The header's "Book a Free Consultation" button is redundant once the
+     hamburger takes over — it doesn't shrink (white-space: nowrap on .btn)
+     and was overflowing past the viewport on phones, overlapping/hiding the
+     logo and forcing the whole page to scroll horizontally. The mobile
+     slide-in nav (.mobile-nav-cta) already repeats this same CTA. */
+  .header-cta .btn-primary { display: none; }
 
   .hero-grid-layout { grid-template-columns: 1fr; text-align: left; }
   .hero-art { order: -1; max-width: 320px; margin: 0 auto 20px; }
