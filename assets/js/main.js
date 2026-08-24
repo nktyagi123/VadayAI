@@ -4,8 +4,9 @@
    shared file can run on every page without erroring on missing markup.
    ========================================================================== */
 
-// Replace with your Formspree / Web3Forms / backend endpoint
-const FORM_ENDPOINT = "https://formspree.io/f/REPLACE_WITH_REAL_ENDPOINT";
+// Web3Forms endpoint — the form's access_key (set in the hidden field in
+// contact.html) tells Web3Forms which inbox to deliver submissions to.
+const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 
 document.addEventListener("DOMContentLoaded", () => {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -517,14 +518,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const payload = {};
         new FormData(form).forEach((value, key) => { payload[key] = value; });
-        // eslint-disable-next-line no-console
-        console.log("Contact form submission (wire FORM_ENDPOINT to send for real):", payload);
-        console.log("FORM_ENDPOINT:", FORM_ENDPOINT);
 
-        form.style.display = "none";
-        if (errorSummary) errorSummary.classList.remove("is-visible");
-        if (successEl) successEl.classList.add("is-visible");
-        form.reset();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) submitBtn.disabled = true;
+
+        fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(payload)
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.success) {
+              form.style.display = "none";
+              if (errorSummary) errorSummary.classList.remove("is-visible");
+              if (successEl) successEl.classList.add("is-visible");
+              form.reset();
+            } else {
+              if (errorSummary) {
+                errorSummary.textContent =
+                  data.message || "Something went wrong sending your message. Please try again or email us directly.";
+                errorSummary.classList.add("is-visible");
+              }
+            }
+          })
+          .catch(() => {
+            if (errorSummary) {
+              errorSummary.textContent =
+                "Something went wrong sending your message. Please try again or email us directly at info@vadayai.com.";
+              errorSummary.classList.add("is-visible");
+            }
+          })
+          .finally(() => {
+            if (submitBtn) submitBtn.disabled = false;
+          });
       });
     });
 
